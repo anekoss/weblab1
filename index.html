@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/html.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>lab1</title>
+</head>
+<body>
+<table class= "creator" >
+    <tr>
+        <td class="student">ФИО</td>
+        <td class="group">Группа</td>
+        <td class="variant">Вариант</td>
+    </tr>
+    <tr>
+        <td class="student">Чернова Анна Ивановна</td>
+        <td class="group">P32301</td>
+        <td class="variant">3116</td>
+    </tr>
+</table>
+<table id="graphs">
+    <tr >
+        <td id="graph">
+            <img src="graph.png"  alt=graphic">
+        </td>
+    </tr>
+</table>
+<form id="main-form" method="post">
+<table id="parameter">
+    <tr>
+        <td class="text-param">
+            Значение X:
+        </td>
+        <td id="x" class=elements>
+            <label>
+                <input type="radio" name="X" value="-4">
+                -4
+            </label>
+            <label>
+                <input type="radio" name="X" value="-3">
+                -3
+            </label>
+            <label>
+                <input type="radio" name="X" value="-2">
+                -2
+            </label>
+            <label>
+                <input type="radio" name="X" value="-1">
+                -1
+            </label>
+            <label>
+                <input type="radio" name="X" value="0">
+                0
+            </label>
+            <label>
+                <input type="radio" name="X" value="1">
+                1
+            </label>
+            <label>
+                <input type="radio" name="X" value="2">
+                2
+            </label>
+            <label>
+                <input type="radio" name="X" value="3">
+                3
+            </label>
+            <label>
+                <input type="radio" name="X" value="4">
+                4
+            </label>
+        </td>
+
+    </tr>
+    <tr>
+        <td class="text-param">
+                Значение Y:
+        </td>
+        <td id="y" class="elements">
+            <label>
+                <input type="text" name="Y" id="y-text" size=100% placeholder="Введите число в интервале (-3; 3)" maxlength="10">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td class="text-param">
+            Значение R:
+        </td>
+        <td id="r" class="elements">
+            <label>
+                <input type="radio" name="R" value="1">
+                1
+
+            </label>
+            <label>
+                <input type="radio" name="R" value="1.5">
+                1.5
+            </label>
+            <label>
+                <input type="radio" name="R" value="2">
+                2
+            </label>
+            <label>
+                <input type="radio" name="R" value="2.5">
+                2.5
+            </label>
+            <label>
+                <input type="radio" name="R" value="3">
+                3
+            </label>
+        </td>
+    </tr>
+</table>
+    <table id="submit" >
+    <tr id="button" class="elements">
+        <td>
+            <input type="submit" value="Отправить">
+        </td>
+        <td>
+            <input type="reset" id="reset" value="Сбросить">
+        </td>
+        <td>
+            <input type="button" value="Очистить таблицу" onclick="clearTable()">
+        </td>
+    </tr>
+        <p>
+            <div id="errors"></div>
+    </table>
+<table id="result-table">
+    <tr>
+        <th>X</th>
+        <th>Y</th>
+        <th>R</th>
+        <th>Текущее время</th>
+        <th>Время работы скрипта</th>
+        <th>Результат</th>
+    </tr>
+</table>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
