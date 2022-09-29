@@ -1,6 +1,7 @@
 let x;
 let y;
 let r;
+
 function checkX() {
     if (!validateRadio("X")) {
         showMessage("Значение X не выбрано")
@@ -13,21 +14,28 @@ function checkX() {
 function checkY() {
     let yField = $('#y-text');
     let yVal = yField.val().replace(',', '.');
+
     if (yVal === "") {
         showMessage("Значение Y не введено")
         return false;
     } else if (yVal.match(/^[+-]0$/) || yVal.match(/^[+-]0\.0+$/) ||
-         yVal.match(/^[+-]?00+$/) || yVal.match(/^[+-]?00+\.[0-9]+$/) ||
+        yVal.match(/^[+-]?00+$/) || yVal.match(/^[+-]?00+\.[0-9]+$/) ||
         !yVal.match(/^-?[0-9]+\.[0-9]+$/) && !yVal.match(/^-?[0-9]+$/)) {
         showMessage("Значение Y должно быть числом");
         return false;
     }
-    if (yVal <= -3 || yVal >= 3) {
+
+    if ((yVal <= -3 || yVal >= 3) && ((yVal.substring(0, 2) !== "2.") && (yVal.substring(0, 3) !== "-2.") && (yVal.substring(0, 2) !== "2,") && (yVal.substring(0, 3) !== "-2,"))) {
         showMessage("Значение Y не входит в интервал (-3,3)");
         return false;
+    } else {
+        if (yVal.substring(0, 1) === "-") {
+            y = yVal.substring(0, 17);
+        } else {
+            y = yVal.substring(0, 16);
+        }
+        return true;
     }
-    y = yVal;
-    return true;
 }
 
 function checkR() {

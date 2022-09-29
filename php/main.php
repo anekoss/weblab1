@@ -26,12 +26,12 @@ function checkArea($x, $y, $r) {
     return checkTriangle($x, $y, $r) || checkRectangle($x, $y, $r) || checkSector($x, $y, $r);
 }
 
-function validateX($y) {
-    return is_numeric($y) && ($y == -4 || $y == -3 || $y == -2 || $y == -1 || $y == 0 || $y == 1 || $y == 2 || $y == 3 || $y == 4);
+function validateX($x) {
+    return is_numeric($x) && ($x == -4 || $x == -3 || $x == -2 || $x == -1 || $x == 0 || $x == 1 || $x == 2 || $x == 3 || $x == 4);
 }
 
-function validateY($x) {
-    return is_numeric($x) && $x > -3 && $x <= 3;
+function validateY($y) {
+    return is_numeric($y) && $y > -3 && $y < 3;
 }
 
 function validateR($r) {
