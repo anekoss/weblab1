@@ -1,4 +1,4 @@
-#main-form{
+#main-form {
     float: left;
     margin-top: -34%;
     margin-left: 2%;
@@ -6,26 +6,26 @@
     width: 50%;
     font-size: 18px;
     font-family: "Arial", sans-serif;
-
-
 }
-.text-param{
+
+.text-param {
     font-weight: bold;
     font-family: "Arial", sans-serif;
     text-shadow: 1px 1px 2px #8BDFE2;
 }
-.elements{
+
+.elements {
     font-weight: 500;
     font-size: 15px;
     text-shadow: 1px 1px 2px #5F4393;
 }
 
-#errors{
+#errors {
     color: #5F4393;
     font-size: 17px;
-    /*text-shadow: 1px 1px 2px red;*/
     margin-left: 1%;
 }
+
 #button input {
     font-size: 14px;
     border: 2px solid #5F4393;
@@ -36,42 +36,48 @@
     margin-right: -5%;
     color: #5F4393;
 }
- #parameter td {
+
+#parameter td {
     width: 110px;
 }
 
-#y-text{
-     border-radius: 20%;
- }
-#y input[type="text"]{
+#y-text {
+    border-radius: 20%;
+}
+
+#y input[type="text"] {
     border-radius: 5px;
     border: 2px solid;
     background: #8BDFE2;
     margin: 0 1%;
-    color:#5F4393;
+    color: #5F4393;
     width: 400px;
     height: 30px;
     text-align: center;
     font-weight: bold;
     font-size: 15px;
 }
-td{
+
+td {
     border-spacing: 1px 1px;
 }
-.elements input{
+
+.elements input {
     border-radius: 5px;
 }
-.elements input:hover{
 
+.elements input:hover {
     box-shadow: 0 0 5px 2px #5F4393;
 }
+
 #result-table th {
     border: 2px solid;
 }
-#submit{
-    margin-top: 2%;
 
+#submit {
+    margin-top: 2%;
 }
+
 input[type=radio] {
     border: 1px solid #5F4393;
     background: #faf8ed;
@@ -80,17 +86,17 @@ input[type=radio] {
 }
 
 input[type=radio]:checked {
-    background: #8BDFE2 ;
+    background: #8BDFE2;
 }
-
 
 
 #result-table td {
     text-align: center;
     border: 2px solid;
 }
+
 #result-table {
-    text-align:center;
+    text-align: center;
     background: #faf8ed;
     margin-top: 54%;
     font-family: "Courier New", monospace;

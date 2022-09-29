@@ -9,8 +9,6 @@
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 1%;
-
-
 }
 
 .creator{
@@ -18,13 +16,12 @@
     border-spacing: 30px 5px;
     width: 100%;
 }
+
 .creator .student {
-    /*float: left;*/
     width: 40%;
 }
 
 .creator .group{
-    /*float: left;*/
     width: 30%;
 }
 
